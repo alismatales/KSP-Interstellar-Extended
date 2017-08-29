@@ -592,10 +592,10 @@ namespace FNPlugin.Collectors
         {
             // retreive and convert to double
             double abundance = (double)(decimal)ResourceMap.Instance.GetAbundance(request);
-
-            if (abundance < 1)
-                abundance = Math.Pow(abundance, 4);
-
+         
+         //   if (abundance < 1)
+         //       abundance = Math.Pow(abundance, 4);
+         
             return abundance;
         }
 
@@ -751,7 +751,7 @@ namespace FNPlugin.Collectors
                     if (abundance == null)
                         continue;
 
-                    deltaTime = (deltaTime >= 1.0 ? deltaTime : 1.0);
+                    //deltaTime = (deltaTime >= 1.0 ? deltaTime : 1.0);
                     resource.Production = minedAmount * abundance.Local;
                     CalculateSpareRoom(resource);
 
