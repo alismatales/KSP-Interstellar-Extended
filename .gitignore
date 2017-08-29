@@ -13,3 +13,5 @@ Thumbs.db
 WarpPlugin.v12.suo
 *.csproj
 .vs/WarpPlugin/v15/sqlite3/storage.ide
+*.dll
+FNPlugin/WarpPlugin.csproj.user
